@@ -1,0 +1,228 @@
+/* SouEdu – Custom Styles */
+
+:root {
+  --primary: #1a73e8;
+  --primary-dark: #1557b0;
+  --secondary: #34a853;
+  --accent: #fbbc04;
+  --danger: #ea4335;
+  --bg: #f8f9fa;
+  --text: #202124;
+  --muted: #5f6368;
+  --card-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+/* ── Base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; }
+
+/* ── Header / Navbar ── */
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+  min-height: 56px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+
+header .brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+header .brand span { font-weight: 300; }
+
+nav { display: flex; gap: .25rem; flex-wrap: wrap; }
+
+nav a {
+  color: rgba(255,255,255,.9);
+  padding: .5rem .9rem;
+  border-radius: 4px;
+  font-size: .95rem;
+  transition: background .2s;
+}
+
+nav a:hover,
+nav a.active {
+  background: rgba(255,255,255,.2);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ── Hero Banner ── */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1.5rem 3.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin: 0 0 1rem;
+}
+
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  opacity: .9;
+}
+
+.btn {
+  display: inline-block;
+  padding: .75rem 1.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background .2s, color .2s, border-color .2s;
+}
+
+.btn-light {
+  background: #fff;
+  color: var(--primary);
+}
+
+.btn-light:hover {
+  background: #e8f0fe;
+  text-decoration: none;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255,255,255,.7);
+}
+
+.btn-outline-light:hover {
+  background: rgba(255,255,255,.15);
+  text-decoration: none;
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+main { padding: 3rem 1.5rem; }
+
+/* ── Cards ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.card .icon {
+  font-size: 3rem;
+  margin-bottom: .75rem;
+  display: block;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0 0 .75rem;
+  color: var(--primary);
+}
+
+.card p { color: var(--muted); margin: 0 0 1.25rem; font-size: .95rem; }
+
+/* ── Info Sections ── */
+.section { margin-bottom: 2.5rem; }
+
+.section h2 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: .35rem;
+  margin-bottom: 1rem;
+}
+
+/* ── Tips List ── */
+.tips { list-style: none; padding: 0; margin: 0; }
+
+.tips li {
+  background: #fff;
+  border-left: 4px solid var(--primary);
+  margin-bottom: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0 6px 6px 0;
+  box-shadow: var(--card-shadow);
+}
+
+.tips li strong { display: block; margin-bottom: .25rem; color: var(--text); }
+
+.tips.green li  { border-left-color: var(--secondary); }
+.tips.amber li  { border-left-color: var(--accent); }
+.tips.red   li  { border-left-color: var(--danger); }
+
+/* ── Alert Box ── */
+.alert {
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-size: .95rem;
+}
+
+.alert-info    { background: #e8f0fe; border-left: 4px solid var(--primary); color: #174ea6; }
+.alert-warning { background: #fef9e7; border-left: 4px solid var(--accent);  color: #7a5c00; }
+.alert-success { background: #e6f4ea; border-left: 4px solid var(--secondary); color: #1e5631; }
+
+/* ── Footer ── */
+footer {
+  background: #202124;
+  color: rgba(255,255,255,.7);
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: .9rem;
+}
+
+footer a { color: rgba(255,255,255,.85); }
+footer a:hover { color: #fff; }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  header { flex-direction: column; align-items: flex-start; padding: .75rem 1rem; }
+  nav { gap: 0; }
+}
