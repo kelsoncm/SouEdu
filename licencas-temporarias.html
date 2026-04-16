@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Licenças Temporárias – SouEdu</title>
-  <meta name="description" content="Dicas de uso para licenças de software educacionais temporárias — válidas durante o vínculo acadêmico do estudante." />
+  <meta name="description" content="Dicas de uso para licenças de software educacionais temporárias — limitadas por um número fixo de dias, créditos ou horas de processamento." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -14,6 +14,7 @@
     <nav>
       <a href="index.html">Início</a>
       <a href="licencas-permanentes.html">Licenças Permanentes</a>
+      <a href="licencas-durante-vinculo.html">Durante o Vínculo</a>
       <a href="licencas-temporarias.html" class="active">Licenças Temporárias</a>
     </nav>
   </header>
@@ -21,8 +22,9 @@
   <section class="hero">
     <h1>⏳ Licenças Temporárias</h1>
     <p>
-      Licenças válidas enquanto você for aluno. Aprenda como aproveitá-las,
-      renová-las e o que fazer quando o vínculo acadêmico encerrar.
+      Licenças com prazo ou cota fixos — válidas por um determinado número de dias,
+      créditos monetários ou horas de processamento. Saiba como aproveitá-las antes
+      que expirem e o que fazer quando o limite for atingido.
     </p>
   </section>
 
@@ -32,15 +34,24 @@
       <section class="section">
         <h2>O que são licenças temporárias?</h2>
         <p>
-          São licenças de software concedidas exclusivamente durante o período de
-          vínculo com uma instituição de ensino. Quando o aluno se forma, transfere
-          de instituição ou interrompe o curso, o acesso ao software é encerrado
-          — geralmente automaticamente.
+          São licenças com um limite fixo e previsível — um contador que vai diminuindo
+          independentemente do seu vínculo com a instituição. Esse limite pode ser:
+        </p>
+        <ul>
+          <li><strong>Dias corridos</strong> — ex.: 30 dias a partir da ativação;</li>
+          <li><strong>Créditos monetários</strong> — ex.: US$ 100 ou R$ 500 em serviços de nuvem;</li>
+          <li><strong>Horas de processamento / computação</strong> — ex.: 100 GPU-hours ou 50 h de cluster HPC;</li>
+          <li><strong>Volume de uso</strong> — ex.: 50 GB de tráfego, 10.000 requisições de API.</li>
+        </ul>
+        <p>
+          Ao contrário das <a href="licencas-durante-vinculo.html">licenças durante o vínculo</a>
+          (que duram enquanto você for aluno), estas expiram quando o contador chega a zero —
+          mesmo que você ainda esteja matriculado.
         </p>
         <div class="alert alert-warning">
-          <strong>⚠️ Atenção:</strong> ao final do vínculo acadêmico, arquivos
-          criados com esses softwares podem se tornar inacessíveis caso você
-          não possua uma licença alternativa. Planeje a transição com antecedência.
+          <strong>⚠️ Atenção:</strong> planeje o uso com antecedência. Créditos e períodos
+          de teste costumam ser suficientes apenas para aprendizado e projetos pontuais —
+          não para uso contínuo de produção.
         </div>
       </section>
 
@@ -48,52 +59,52 @@
         <h2>Exemplos comuns</h2>
         <div class="card-grid">
           <div class="card">
-            <span class="icon">🐱</span>
-            <h2>GitHub Student Developer Pack</h2>
-            <p>
-              Acesso gratuito a dezenas de ferramentas (domínios, serviços de
-              nuvem, IDEs e mais) enquanto a conta for verificada como estudante.
-            </p>
-          </div>
-          <div class="card">
-            <span class="icon">🛠️</span>
-            <h2>JetBrains Education</h2>
-            <p>
-              Todas as IDEs da JetBrains (IntelliJ, PyCharm, WebStorm etc.)
-              gratuitamente por 1 ano, renovável enquanto houver vínculo acadêmico.
-            </p>
-          </div>
-          <div class="card">
             <span class="icon">☁️</span>
-            <h2>Microsoft 365 / Azure</h2>
+            <h2>Azure for Students</h2>
             <p>
-              Microsoft 365 A1 e créditos Azure via Azure Dev Tools for Teaching —
-              acesso encerrado quando o estudante sai da instituição.
+              US$ 100 em créditos Azure válidos por 12 meses a partir da ativação —
+              encerrado quando os créditos ou o prazo se esgotam.
             </p>
           </div>
           <div class="card">
-            <span class="icon">🎨</span>
-            <h2>Adobe Creative Cloud</h2>
+            <span class="icon">🟡</span>
+            <h2>AWS Educate</h2>
             <p>
-              Desconto ou acesso gratuito via instituição conveniada. Ao sair,
-              os arquivos em formatos proprietários (PSD, AI) ainda podem ser
-              abertos, mas você perde as ferramentas de edição.
+              Créditos AWS distribuídos por semestre ou projeto. Ao esgotar o saldo,
+              os serviços são suspensos automaticamente.
+            </p>
+          </div>
+          <div class="card">
+            <span class="icon">🟢</span>
+            <h2>Google Cloud for Students</h2>
+            <p>
+              US$ 300 em créditos por 90 dias ou até o saldo acabar — o que ocorrer
+              primeiro.
             </p>
           </div>
           <div class="card">
             <span class="icon">🔬</span>
-            <h2>MATLAB Online / Campus</h2>
+            <h2>MATLAB Trial</h2>
             <p>
-              Licenças campus vinculadas ao e-mail institucional — expiram assim
-              que a conta de estudante é desativada.
+              Versão de avaliação gratuita por 30 dias corridos. Após esse período,
+              o acesso é bloqueado independentemente do status acadêmico.
             </p>
           </div>
           <div class="card">
-            <span class="icon">🗄️</span>
-            <h2>AWS Educate / Google Cloud</h2>
+            <span class="icon">🖥️</span>
+            <h2>Créditos de GPU / HPC</h2>
             <p>
-              Créditos e acesso facilitado a serviços de nuvem para fins
-              educacionais — requerem revalidação periódica do status acadêmico.
+              Programas como NVIDIA Academic, ACCESS (antigo XSEDE) ou clusters
+              universitários concedem cotas de horas de GPU ou CPU que se esgotam
+              conforme o uso.
+            </p>
+          </div>
+          <div class="card">
+            <span class="icon">🔑</span>
+            <h2>Trials de IDEs e SaaS</h2>
+            <p>
+              Ferramentas como GitHub Copilot (30 dias grátis), Figma (30 dias do
+              plano Professional) ou serviços SaaS com períodos de teste limitados.
             </p>
           </div>
         </div>
@@ -105,96 +116,89 @@
           <li>
             <strong>Verifique a elegibilidade</strong><br />
             A maioria dos programas exige um e-mail institucional ativo
-            (<code>@suainstituicao.edu.br</code>) ou comprovante de matrícula
-            (ex.: declaração de aluno regular, carteirinha).
+            (<code>@suainstituicao.edu.br</code>) ou comprovante de matrícula.
+            Confirme antes de ativar para não desperdiçar o período de trial.
           </li>
           <li>
             <strong>Cadastre-se nos portais dos fornecedores</strong><br />
             Acesse diretamente os sites de cada programa:
             <ul>
-              <li><a href="https://education.github.com/pack" target="_blank" rel="noopener">GitHub Student Developer Pack</a></li>
-              <li><a href="https://www.jetbrains.com/student/" target="_blank" rel="noopener">JetBrains for Students</a></li>
               <li><a href="https://azure.microsoft.com/pt-br/free/students/" target="_blank" rel="noopener">Azure for Students</a></li>
-              <li><a href="https://www.autodesk.com/education/edu-software/overview" target="_blank" rel="noopener">Autodesk Education</a></li>
+              <li><a href="https://aws.amazon.com/education/awseducate/" target="_blank" rel="noopener">AWS Educate</a></li>
+              <li><a href="https://cloud.google.com/edu/students" target="_blank" rel="noopener">Google Cloud for Students</a></li>
+              <li><a href="https://www.mathworks.com/campaigns/products/trials.html" target="_blank" rel="noopener">MATLAB Trial</a></li>
             </ul>
           </li>
           <li>
-            <strong>Confirme o e-mail institucional</strong><br />
-            Clique no link de verificação enviado ao seu e-mail da instituição.
-            Sem isso, a solicitação pode ficar em análise por dias.
+            <strong>Ative apenas quando precisar usar de verdade</strong><br />
+            Trials e créditos começam a contar a partir da ativação. Não ative
+            antes de ter um projeto concreto para usar o serviço.
           </li>
           <li>
-            <strong>Anote a data de vencimento</strong><br />
-            Configure um lembrete no calendário com <strong>60 dias de
-            antecedência</strong> para renovar antes de perder o acesso.
+            <strong>Monitore o saldo e o prazo regularmente</strong><br />
+            Configure alertas de cobrança e notificações de uso nos painéis de
+            controle das plataformas para não ser surpreendido por cobranças.
           </li>
         </ol>
       </section>
 
       <section class="section">
-        <h2>Dicas de uso durante o vínculo</h2>
+        <h2>Dicas de uso durante o período vigente</h2>
         <ul class="tips">
           <li>
-            <strong>Centralize seus projetos em formatos abertos sempre que possível</strong>
-            Use formatos como PDF, SVG, CSV, Markdown e ODF para garantir que
-            seus trabalhos sejam acessíveis mesmo sem o software original.
+            <strong>Defina um objetivo claro antes de ativar</strong>
+            Tenha em mente qual projeto ou aprendizado você vai realizar com o
+            crédito ou trial. Ativar sem planejamento é desperdiçar o limite.
           </li>
           <li>
-            <strong>Faça backups frequentes</strong>
-            Armazene seus arquivos em serviços que você controla (HD externo,
-            Google Drive pessoal, etc.), não apenas no armazenamento fornecido
-            pela instituição.
+            <strong>Configure alertas de gasto e uso</strong>
+            Plataformas de nuvem (Azure, AWS, GCP) permitem criar alertas que
+            notificam quando o saldo atinge 50%, 80% ou 100% do limite.
           </li>
           <li>
-            <strong>Explore tudo que a licença oferece</strong>
-            Muitos pacotes (ex.: GitHub Student Pack) incluem dezenas de
-            ferramentas. Dedique um tempo para conhecer o catálogo completo.
+            <strong>Desligue recursos quando não estiver usando</strong>
+            Máquinas virtuais, clusters e instâncias de banco de dados consomem
+            créditos mesmo ociosos. Crie rotinas de desligamento automático.
           </li>
           <li>
-            <strong>Documente seu aprendizado</strong>
-            Registre os projetos feitos com essas ferramentas — eles serão seu
-            portfólio ao buscar emprego.
+            <strong>Documente o que aprendeu</strong>
+            Registre tutoriais, scripts e configurações utilizados. Se precisar
+            recriar o ambiente depois, você terá o histórico.
           </li>
           <li>
-            <strong>Apresente feedbacks aos fornecedores</strong>
-            Programas educacionais muitas vezes evoluem a partir do retorno de
-            estudantes. Reporte bugs e sugira melhorias — isso também vai para
-            o seu currículo.
+            <strong>Explore alternativas gratuitas para uso contínuo</strong>
+            Muitos provedores possuem camadas permanentemente gratuitas (free tiers)
+            para uso leve. Migre para elas antes de esgotar o trial.
           </li>
         </ul>
       </section>
 
       <section class="section">
-        <h2>Planejando a transição (pós-formatura)</h2>
+        <h2>Planejando o encerramento do período</h2>
         <div class="alert alert-warning">
-          <strong>📅 Faça isso com pelo menos 2 meses de antecedência:</strong>
+          <strong>📅 Faça isso com pelo menos 2 semanas de antecedência:</strong>
         </div>
         <ul class="tips amber">
           <li>
             <strong>Exporte todos os seus dados</strong>
-            Faça download de repositórios, projetos, trabalhos e qualquer dado
-            armazenado nas plataformas que perderá acesso.
+            Faça download de arquivos, snapshots de banco de dados, repositórios
+            e qualquer dado armazenado nas plataformas antes do limite ser atingido.
           </li>
           <li>
-            <strong>Avalie alternativas gratuitas ou open source</strong>
-            Para muitas ferramentas pagas existe uma alternativa livre: VS Code
-            (JetBrains), LibreOffice (Office), GIMP/Inkscape (Adobe), Octave (MATLAB).
+            <strong>Avalie alternativas gratuitas permanentes</strong>
+            Muitos serviços possuem free tiers: AWS Free Tier (12 meses), GCP
+            Always Free, Oracle Cloud Free Tier — migre para eles para continuar
+            praticando sem custo.
           </li>
           <li>
-            <strong>Pesquise planos de transição dos fornecedores</strong>
-            Alguns oferecem desconto de "ex-aluno" ou preço especial para quem
-            migra de licença educacional para comercial. JetBrains, por exemplo,
-            oferece preço escalonado nos primeiros anos.
+            <strong>Encerre recursos que gerariam cobranças</strong>
+            Exclua máquinas virtuais, buckets de armazenamento e outros serviços
+            que poderiam gerar cobranças automáticas ao fim do trial ou créditos.
           </li>
           <li>
-            <strong>Converta formatos proprietários</strong>
-            Antes de perder o acesso, exporte seus arquivos para formatos
-            amplamente suportados (DOCX → PDF, PSD → PNG/PDF, etc.).
-          </li>
-          <li>
-            <strong>Cancele as subscrições que não vai mais usar</strong>
-            Evite cobranças inesperadas de trials ou planos que podem ser
-            ativados automaticamente ao encerrar a elegibilidade educacional.
+            <strong>Verifique se há renovação disponível</strong>
+            Alguns programas permitem solicitar créditos adicionais mediante
+            justificativa acadêmica. Consulte o portal antes de encerrar.
           </li>
         </ul>
       </section>
@@ -203,9 +207,9 @@
         <h2>Cuidados importantes</h2>
         <ul class="tips red">
           <li>
-            <strong>Não continue usando após perder a elegibilidade</strong>
-            Usar software com licença educacional vencida é equivalente a usar
-            software pirata — pode gerar sanções legais para você.
+            <strong>Não ative recursos que não vai usar imediatamente</strong>
+            Créditos começam a ser consumidos assim que os serviços são ligados.
+            Deixar instâncias ociosas é um desperdício do seu limite.
           </li>
           <li>
             <strong>Não forje documentos de matrícula</strong>
@@ -214,16 +218,19 @@
           </li>
           <li>
             <strong>Verifique proibições de uso comercial</strong>
-            Trabalhos freelance feitos com software educacional temporário podem
-            violar os termos de uso — mesmo durante o vínculo acadêmico.
+            Créditos e trials educacionais são para fins de aprendizado. Usar
+            esses recursos para hospedar serviços comerciais ou gerar renda
+            pode violar os termos de uso e resultar em bloqueio da conta.
           </li>
         </ul>
       </section>
 
       <div class="alert alert-info">
-        <strong>📌 Leia também:</strong> acesse a página de
-        <a href="licencas-permanentes.html">Licenças Permanentes</a> para conhecer
-        opções que você pode manter depois da formatura.
+        <strong>📌 Leia também:</strong> veja as
+        <a href="licencas-durante-vinculo.html">Licenças Durante o Vínculo</a>
+        (válidas enquanto você for aluno) e as
+        <a href="licencas-permanentes.html">Licenças Permanentes</a> para opções
+        que você pode manter depois da formatura.
       </div>
 
     </div>
